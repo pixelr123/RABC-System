@@ -103,7 +103,7 @@ Default Permissions:
 
   For assigning the permision to the user to access the resource or delete the resource or assign the resource to user:
 
-  You have to call this api `/roles/{id}/permissions`: and you have give the permission to that perticular user.
+  You have to call this api `/roles/{id}/permissions:` and you have give the permission to that perticular user.
 
       GET: /resources - for getting all the resources
       PUT: /resources{id} - for updating the resources
