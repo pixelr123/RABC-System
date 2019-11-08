@@ -42,23 +42,23 @@ Default Permissions:
 -- Generating Token -- 
 POST: /oauth/token - For genrating the token
 
-    Basic Auth:
+   Basic Auth:
         username: atul123
         password: atul@123
     
-    Login:
+   Login:
       username: ani@gmail.com
       password: ani
       grant_type: password - same for all the users
 
-    Pass the token in the header as - Authorization Bearer<token>
+   Pass the token in the header as - Authorization Bearer<token>
 
 -- To assign permission --
 GET: /permissions - for getting all the permissions
 GET: /roles/{id}/permissions - for getting permissions by role
 PUT: /roles/{id}/permissions - for assigning the permissions to role
 
-    For assigning the permission to the users
+   For assigning the permission to the users
         /roles/{id}/permissions: here permission will take an array of permissions id
         Example: 
                 [
@@ -68,23 +68,23 @@ PUT: /roles/{id}/permissions - for assigning the permissions to role
 DELETE: /role/{id}/permissions - for deleting the assigned permissions to a role
 
 -- Roles --
-GET: /roles - for getting all the roles
-DELETE: /roles{id} - for deleting the role
-PUT: /roles/{id} - for update the role
-POST: /roles - for adding a new role
+    GET: /roles - for getting all the roles
+    DELETE: /roles{id} - for deleting the role
+    PUT: /roles/{id} - for update the role
+    POST: /roles - for adding a new role
 
 -- Users --
-GET: /users - for getting all the users
-PUT: /users{id} - for updating the user.
-DELETE: /user{id} - for deleting the user.
-POST: /users - for adding a new user
+    GET: /users - for getting all the users
+    PUT: /users{id} - for updating the user.
+    DELETE: /user{id} - for deleting the user.
+    POST: /users - for adding a new user
 
 -- For assigning role to user
 
 GET: /roles/{id}/users - for getting the list of user by role
 PUT: /roles/{id}/users - for assigning the role to a user
 
-    For assigning the role to the user
+   For assigning the role to the user
         /roles/{id}/users: here users will take an array of users id
         Example: 
                 [
@@ -99,7 +99,7 @@ User[sam - Admin] has only update_resource permission
 
 For assigning the permision to the user to access the resource or delete the resource or assign the resource to user:
 
-    You have to call this api /roles/{id}/permissions: and you have give the permission to that perticular user.
+You have to call this api /roles/{id}/permissions: and you have give the permission to that perticular user.
 
 GET: /resources - for getting all the resources
 PUT: /resources{id} - for updating the resources
