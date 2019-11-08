@@ -4,13 +4,14 @@ Simple RABC-System with OAuth2
 
 Default Users: 
 
-------------------------------------------------------------------------------
-|    user            |     password         role       |       permission    | 
-| ani@gmail.com      |       ani           Superuser   |    all permission   |
-| sam@gmail.com      |     fedora           Admin      |      view permission|  
-| jon@gmail.com      |     fedora           Admin      |        undefined    |
-| alice@gmail.com    |      fedora          Superuser  |        undefined    |
-------------------------------------------------------------------------------
+
+   user              |   password     |     role        |      permission    
+---------------------| -------------- |-----------------| ---------------------
+| ani@gmail.com      |       ani      |     Superuser   |    all permission   
+| sam@gmail.com      |     fedora     |      Admin      |      view permission  
+| jon@gmail.com      |     fedora     |      Admin      |        undefined    
+| alice@gmail.com    |      fedora    |      Superuser  |        undefined    
+---------------------| -------------- | --------------- | ---------------------
 Default Roles:
 1. Superuser
 2. Admin
