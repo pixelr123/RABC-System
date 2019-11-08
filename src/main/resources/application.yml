@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: Auth-system
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+config:
+  oauth2:
+    privateKey:
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEpQIBAAKCAQEAvmlpRdtDDIcvn5Jsjh09e1PTGoNkTCJpZDFN13YGMSqfYeMr
+      eDSkEwU4PGLbdu0l+yiwpzquLNnUui7A8Ko1teqq+ZgXTaeIGO4TIxSx/bMXQ0/p
+      7bWTBIr0L3NKwC1PU1eQdNNgpRYrUKC4XighDQEQ4BqXluwa0b6sVv5b4C65VvRG
+      mHE9Kgw5FnNkmb+JhZlPeYvBKR8VAsOr5/4sjeRSvTiqwv0gXulY0x4osv4An1NA
+      SZCagav0Bka8x+8/4WbBh0t46nJLSEHggYO/BJZ84wkmI98dgGppUv/NHZTLNecd
+      wWlZL8M7OChIBacJ9wWEzcCJIMAmupycIBcHeQIDAQABAoIBAQCFOX+8rsLk2xlJ
+      DswBSxgfV/EWVeQxGMqgnZaXMC7465eEh8t8WWiLHlXQemKPfTHb3wZqmzYOj4K1
+      mczJFm5qD/z8kZuMa7FfsAOXwf0fQtT99cX42dg5j3d2U7Zza8Ba0aNy+gpet3oq
+      +ajFyFIHpT1Hb5Ostxm0szIl0+Y4nYM48iFDJKa5btZHfSfGAJvrYregMzl5VTUW
+      qVz+dByv/KlSBJfO/Q3i5B82V5Uzfc9FdmLy+hgEo+ljGHJMnt/ho8+qBP+wzHeP
+      jswGn2e8StZpJECaZTpSrkCus1ALhXKzsknXJauIBCgc2M+8iqrVLyxLpqi6dygx
+      rUZwQhdhAoGBAOZSz95WGyUiqmQgos9W9DPFVFpWRdQmVDUnEsXmwpiwpVm34ONR
+      BUbJ+caeyO3cG5EfDJwbp36kEJhruU2QCsKb4AK3SNH9THd9a9jiudGudpiondFX
+      rbqaCOPkg/XqkBBF3cP+xp5lQJYlKpC1uTSgfrxiR6qz7vdmyl4iR9adAoGBANOj
+      j57uagDb8wjVxZmWOTrdGJnfvLisYD/I8ORacR9tCzNQaVrqTEgI8CPWnQGylvvF
+      VrqjMOwVMOQcsRFw/P7h1tHZ7uEATrnU30cF+c3q1vO82vU5rN2f4zdmLSaKEgno
+      ULyU2N6DLzlOhbltGmwUAAwUlcwpnx0Idzp86y+NAoGBAJdJvhClLp9t7c5nQYo/
+      65g1/fp4wNVhd96SE9q6gQgawAH2rlmiVnzxHohAtGrJMbJZWscPwy2ERwJXgBha
+      jTbXfIVMLyD/6MJ0N+r2wmfg2TXdTAy+MvdnRn+rEqLtuEN4IPsk1wIkMBBvyU3U
+      kBrpcVX8mGagWk9XzYWXruhhAoGATW3UuLfPLntKAlx7i8JrM776Jim2GPZvzEZO
+      46y3IGE7rM1pjiqUN/KVMPduv9U/6eL75RKZbnYeSga5PYFR/kpP1rzd6ZG8O77G
+      5WwpRY36kHfyv68XMIozjewi7qurB9bn2ua2JUpnd5bj08A333y9u624VFaR8QRM
+      4qgbP20CgYEAxHeJSEhTIkjLUI+pmiGs3UYnMlhEWZekdnGTr9MQkx/ipeGIo7vk
+      QBsk7LkTeawP5OWpjqs3AKaD0ad0kPGsCqPr4dzWxB4RSdOWXuEhpoZpmKhsUUvL
+      KuMla46dh/x0e5u7A80OLoYiROGk8mNqxHiRcu553eudmjS61x5g4g4=
+      -----END RSA PRIVATE KEY-----
+    publicKey:
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvmlpRdtDDIcvn5Jsjh09
+      e1PTGoNkTCJpZDFN13YGMSqfYeMreDSkEwU4PGLbdu0l+yiwpzquLNnUui7A8Ko1
+      teqq+ZgXTaeIGO4TIxSx/bMXQ0/p7bWTBIr0L3NKwC1PU1eQdNNgpRYrUKC4Xigh
+      DQEQ4BqXluwa0b6sVv5b4C65VvRGmHE9Kgw5FnNkmb+JhZlPeYvBKR8VAsOr5/4s
+      jeRSvTiqwv0gXulY0x4osv4An1NASZCagav0Bka8x+8/4WbBh0t46nJLSEHggYO/
+      BJZ84wkmI98dgGppUv/NHZTLNecdwWlZL8M7OChIBacJ9wWEzcCJIMAmupycIBcH
+      eQIDAQAB
+      -----END PUBLIC KEY-----
+    clientid: atul123
+    clientSecret: atul@123
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+      jwt:
+        key-value:
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvmlpRdtDDIcvn5Jsjh09
+          e1PTGoNkTCJpZDFN13YGMSqfYeMreDSkEwU4PGLbdu0l+yiwpzquLNnUui7A8Ko1
+          teqq+ZgXTaeIGO4TIxSx/bMXQ0/p7bWTBIr0L3NKwC1PU1eQdNNgpRYrUKC4Xigh
+          DQEQ4BqXluwa0b6sVv5b4C65VvRGmHE9Kgw5FnNkmb+JhZlPeYvBKR8VAsOr5/4s
+          jeRSvTiqwv0gXulY0x4osv4An1NASZCagav0Bka8x+8/4WbBh0t46nJLSEHggYO/
+          BJZ84wkmI98dgGppUv/NHZTLNecdwWlZL8M7OChIBacJ9wWEzcCJIMAmupycIBcH
+          eQIDAQAB
+          -----END PUBLIC KEY-----
+server:
+  maxHttpHeaderSize: 102400
+  port: 5000
