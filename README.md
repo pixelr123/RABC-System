@@ -39,7 +39,8 @@ Default Permissions:
 19. delete_resource_from_user
 
 
--- Generating Token -- 
+## Generating Token 
+
 POST: /oauth/token - For genrating the token
 
    Basic Auth:
@@ -53,10 +54,10 @@ POST: /oauth/token - For genrating the token
 
    Pass the token in the header as - Authorization Bearer<token>
 
--- To assign permission --
-GET: /permissions - for getting all the permissions
-GET: /roles/{id}/permissions - for getting permissions by role
-PUT: /roles/{id}/permissions - for assigning the permissions to role
+## To assign permission
+   ``GET: /permissions - for getting all the permissions
+   GET: /roles/{id}/permissions - for getting permissions by role
+   PUT: /roles/{id}/permissions - for assigning the permissions to role
 
    For assigning the permission to the users
         /roles/{id}/permissions: here permission will take an array of permissions id
@@ -67,19 +68,19 @@ PUT: /roles/{id}/permissions - for assigning the permissions to role
 
 DELETE: /role/{id}/permissions - for deleting the assigned permissions to a role
 
--- Roles --
+## Roles 
     GET: /roles - for getting all the roles
     DELETE: /roles{id} - for deleting the role
     PUT: /roles/{id} - for update the role
     POST: /roles - for adding a new role
 
--- Users --
+## Users 
     GET: /users - for getting all the users
     PUT: /users{id} - for updating the user.
     DELETE: /user{id} - for deleting the user.
     POST: /users - for adding a new user
 
--- For assigning role to user
+## For assigning role to user
 
 GET: /roles/{id}/users - for getting the list of user by role
 PUT: /roles/{id}/users - for assigning the role to a user
